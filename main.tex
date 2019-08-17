@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.67\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Nagaraju}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kotcharlakota}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Senior Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Microsoft IDC, Hyderabad, India}\\
+	\icon{Phone}{12}{+91 9959838999}\\
+	\icon{At}{12}{\href{mailto://nkotchar@microsoft.com}{nkotchar@microsoft.com}}\\
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/nagaraju-kotcharlakota/}{nagaraju-kotcharlakota}}
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    
+    \cvsect{Strengths}
+	\begin{itemize}
+      \item Ability to learn a new technology fast
+      \item Thinking about solutions out of the constraints
+      \item Performance
+    \end{itemize}
+    
+    \cvsect{Technical Experience}
+    \begin{itemize}
+        \item Cloud Services (Azure)
+        \item RESTful services, Web development, both backend (C# ASP.NET) and frontend (Typescript, React)
+        \item Desktop Applications using Electron, C\#, C++ using MFC/MMC/Win32
+    \end{itemize}
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    
+    \cvsect{Programming Experience}
+	\begin{barchart}{5.5}
+		\baritem{C\#}{100}
+		\baritem{SQL Server}{60}
+		\baritem{TypeScript}{100}
+		\baritem{React}{90}
+		\baritem{Knockout}{60}
+		\baritem{NodeJS}{20}
+		\baritem{Electron}{30}
+		\baritem{C++}{50}
+		\baritem{Git}{40}
+		\baritem{Java}{10}
+	\end{barchart}
+\end{minipage}
+
+%\begin{center}
+%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
+%\end{center}
+
+\vspace{0.5cm}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2011 -- till date}
+		{Senior Software Engineer}
+		{Microsoft}
+		{I have worked in Azure DevOps Manual Testing, Azure DevOps Marketplace, Visual Studio Code Lens and Visual Studio Coded UI Test teams.}
+	\entry
+		{2007 -- 2011}
+		{Senior Software Engineer}
+		{IBM}
+		{Have joined IBM - India Software Labs as a campus hire. Have worked in the development team of Filenet P8 suite of products.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2005 -- 2007}
+		{Master of Technology in CS}
+		{NIT Calicut, India}
+		{8.85 -- CGPA}
+	\entry
+		{2001 -- 2005}
+		{Bachelor of Technology in CSE}
+		{Deccan College of Engineering and Technology, Hyderabad, India}
+		{66\%}
+\end{entrylist}
+
+\cvsect{Recognition/Awards}
+\begin{itemize}
+  \item ‘Star Award’ for the cutting down 95 \%le Marketplace homepage load time by more than a half.
+  \item Nominated as Technical Advisory committee member on behalf of Microsoft for T-Hub (A government of Telangana initiative)
+  \item Won people’s choice award for VS.in hackathon in June 2015
+\end{itemize}
+
+\cvsect{Leadership}
+\begin{itemize}
+  \item Owner for multiple features with up to 5 engineers
+  \item Performance tenet champion for AzDev.IN representing 4 to 5 feature crews
+  \item IOT chapter lead for The Garage India
+  \item Technical Advisory Committee member for T-Hub
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{High level overview of Projects}
+
+\begin{entrylist}
+	\entry
+		{May 18 -- till date}
+		{Marketplace and Azure Test Plans}
+		{Microsoft}
+		{\begin{itemize}
+          \item Shipped a new electron client for running manual tests for Azure Test Plans. Was the E2E owner for this feature consisting of 5 team members. Wrote Win32 native module for docking support.
+          \item Worked on migrating and syncing test point outcome back from TCM microservice to TFS service.
+          \item Exploratory Testing chrome extension for GitHub POC
+        \end{itemize}
+		\\ \texttt{C\#}\slashsep\texttt{SQL Server}\slashsep\texttt{TypeScript}\slashsep\texttt{Electron}\slashsep\texttt{NodeJS}\slashsep\texttt{React}\slashsep\texttt{MobX}\slashsep\texttt{Win32}}
+	\entry
+		{Oct 15 -- May 18}
+		{Marketplace}
+		{Microsoft}
+		{\begin{itemize}
+          \item Performance tenet owner for Marketplace.
+          \item Reduced the 95th percentile home page load time from 14 seconds to <6 seconds. Removed VSSF framework dependency to achieve the same. As part of the same reduced the bundle size from ~800kb to <100kb.
+          \item Server Side Rendering spike for home page and helped the Server Side Rendering effort for Details page which got our APDEX score to ~0.9. Which made our team take a very different approach to reach 0.9 APDEX when compared to every other team in Azure DevOps.
+          \item Implemented MoonCake CDN for dynamic bundling in the common web platform. Which is used by other Azure DevOps services also to cater to China users.
+          \item Shipped features like QnA, Acquisition, etc. (Received good appreciation regarding the design we have come up with for Acquisition scenario)
+          \item Shared Experiences – Loaned for quickly completing the Gates feature in Release Management team
+          \item Client Side Analysis tool – made a tool which converts un-readable client stack trace that we get via telemetry to point to typescript source code. This tool is used by teams across Azure DevOps to analyze client side traces.
+        \end{itemize}
+		\\ \texttt{C\#}\slashsep\texttt{ASP.Net}\slashsep\texttt{SQL Server}\slashsep\texttt{TypeScript}\slashsep\texttt{Knockout}\slashsep\texttt{React}\slashsep\texttt{Re-Flux}\slashsep\texttt{MobX}\slashsep\texttt{NodeJS}}
+	\entry
+		{Oct 13 -- Oct 15}
+		{Visual Studio Code Lens}
+		{Microsoft}
+		{\begin{itemize}
+          \item Created a DRI tool which sends automated emails with reports of live site health. This tool and model were used for long time in other teams as well.
+          \item Setup a backup TFS machine for testing. This is a clone of TFS server which used to host source code of Visual Studio and TFS.
+          \item Moved to Developer role as part of Combined engineering change
+          \item Developed the File Level Indicators for Git and TFVC
+        \end{itemize}
+		\\ \texttt{C\#}\slashsep\texttt{MEF}\slashsep\texttt{Maddog}}
+	\entry
+		{June 11 -- Oct 13}
+		{Visual Studio Coded UI Test}
+		{Microsoft}
+		{\begin{itemize}
+          \item Joined Microsoft as an SDET.
+          \item Refactored the record and playback test framework as the first project
+          \item Created frameworks for Remote record local playback
+          \item Owned BVT and NAR machine setup automation using Maddog
+          \item Performance tenet owner for CUIT and 4 other feature crews
+          \item Wrote a performance framework – which was used by other teams as well to write automated performance tests
+        \end{itemize}
+		\\ \texttt{C\#}\slashsep\texttt{MEF}\slashsep\texttt{Coded UI Test}\slashsep\texttt{Maddog}}
+	\entry
+		{Nov 10 -- June 11}
+		{Business Process Manager}
+		{IBM}
+		{\begin{itemize}
+          \item Worked on Process Engine Profiling tool (part of BPM) which generates load on Process Engine and Case Analyzer tool which provides analytics Content Engine and Process Engine of FileNet P8.
+        \end{itemize}
+		\\ \texttt{Core Java}}
+	\entry
+		{March 10 -- Nov 10}
+		{Advanced Case Management}
+		{IBM}
+		{\begin{itemize}
+          \item Quickly ramped up on new technology (Java) and contributed back to the project.
+        \end{itemize}
+		\\ \texttt{Java}}
+	\entry
+		{Aug 07 -- March 10}
+		{Filenet Enterprise Manager}
+		{IBM}
+		{\begin{itemize}
+          \item Features to bug fixes for multiple releases of Enterprise Manager tool which was part of IBM FileNet P8.
+          \item Was part of most of the Performance related issues and fixed a customer issue which reduced the time taken from ~20 minutes to < a second.
+        \end{itemize}
+		\\ \texttt{VC++}\slashsep\texttt{Win32}\slashsep\texttt{MFC}\slashsep\texttt{MMC Framework}\slashsep\texttt{COM}}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
